@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+
+  h1 {
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    max-width: 950px;
+    width: 100%;
+  }
+
+  table th,
+  table td {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+
+  button {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #555;
+  }
+
+  select {
+    width: 110px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  input[type="date"] {
+    width: 110px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+
+select {
+    color: #333 !important;
+}
+
+select:hover {
+    background-color: #5e5e5e;
+    color: #fff;
+}
+
+.not_started,
+select option[value="not started"] {
+    background-color: #c24747;
+}
+
+.todo,
+select option[value="todo"] {
+    background-color: #ff9900;
+}
+
+.in_progress,
+select option[value="in progress"]{
+    background-color: #fbff00;
+}
+
+.done,
+select option[value="done"] {
+    background-color: #44ff00;
+}

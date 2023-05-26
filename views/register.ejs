@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <script src="script/jquery.js"></script>
+    <script src="js/user_script.js"></script>
+    <script src="template/import_navbar.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <h1>Register</h1>
+    <div id="form" class="form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="first-name">First Name:</label>
+      <input type="text" id="firstname" name="firstname" required>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <p id="check" style="color: #eee !important;" class="text--center"></p>
+      <a href="/userp" id="aa"></a>
+      <button onclick="register()">Register</button>
+    </div>
+  </body>
+</html>

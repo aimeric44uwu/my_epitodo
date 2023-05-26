@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List - Your Name</title>
+    <script src="../script/jquery.js"></script>
+    <script src="../js/todop.js"></script>
+    <script src="../template/import_navbar.js"></script>
+    <link rel="stylesheet" href="../css/todos.css">
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <table>
+      <thead>
+        <tr>
+          <th style="background-color: transparent; border: none;"></th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Creation Time</th>
+          <th>Due Time</th>
+          <th>Status</th>
+          <th>User ID</th>
+          <th style="background-color: transparent; border: none;"></th>
+        </tr>
+      </thead>
+      <tbody id="todo_list">
+        <tr>
+          <td>Buy Groceries</td>
+          <td>Get milk, eggs, and bread</td>
+          <td>2021-05-10 12:00:00</td>
+          <td>2021-05-11 12:00:00</td>
+          <td>Not Started</td>
+          <td>12345</td>
+        </tr>
+        <tr>
+          <td><input type="text" id="title" name="title" value="Finish Project"></td>
+          <td><input type="text" id="title" name="title" value="Complete project report and code"></td>
+          <td><input type="date" value="2021-05-15"></td>
+          <td><input type="date" value="2021-05-15"></td>
+          <td>
+              <select>
+                <option value="not started">not started</option>
+                <option value="todo" selected="selected">todo</option>
+                <option value="in progress">in progress</option>
+                <option value="done">done</option>
+              </select>
+          </td>
+          <td>12345</td>
+        </tr>
+        <tr>
+          <td>Call John</td>
+          <td>Discuss meeting next week</td>
+          <td>2021-05-20 16:30:00</td>
+          <td>2021-05-21 16:30:00</td>
+          <td>Not Started</td>
+          <td>12345</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="padding-left: 150px;">
+      <button onclick="location.href='/userp'">Back to Profile</button>
+      <p id="check" style="color: #eee !important;" class="text--center"></p>
+      <a href="/userp/todos" id="aa"></a>
+      <a href="/login" id="bb"></a>
+    </div>
+  </body>
+</html>

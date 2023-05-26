@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delete account</title>
+    <script src="script/jquery.js"></script>
+    <script src="js/user_script.js"></script>
+    <script src="template/import_navbar.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <h1>Delete Account</h1>
+    <div id="form" class="form">
+      <label for="id">ID:</label>
+      <input type="text" id="userid" name="userid" required>
+
+      <p id="check" style="color: #eee !important;" class="text--center"></p>
+      <a href="/userp" id="aa"></a>
+      <button onclick="delacc()">Save Changes</button>
+      <button style="margin-left: 212px;" onclick="location.href='/userp'">Back to Profile</button>
+    </div>
+  </body>
+</html>
